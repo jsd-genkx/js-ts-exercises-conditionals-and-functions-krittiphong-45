@@ -4,3 +4,11 @@
 // 11+ chars → "Strong"
 
 const password = "pass123";
+let passwordValue = password.length;
+if(passwordValue < 6){
+  console.log(`value:${passwordValue} :Too short`)
+}else if(passwordValue >= 6 && passwordValue <= 10){
+  console.log(`value:${passwordValue} :Moderate`)
+}else if(passwordValue >= 11){
+  console.log(`value:${passwordValue} :Strong`)
+}
