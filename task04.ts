@@ -8,13 +8,29 @@
 
 let num = 9;
 
-if(num === 0){console.log("Zero is not acceptable")}
-else if(num % 3 === 0 && num % 5 === 0){
-  console.log("FizzBuzz")
-}else if(num % 3 === 0){
-  console.log("Fizz")
-}else if(num % 5 === 0){
-  console.log("Buzz")
-}else{
-  console.log("Not divisible by 3 or 5")
-}
+
+
+const fizzBuzz = (number: number) => {
+  if (number === 0) {
+    console.log("Zero is not acceptable");
+  } else if (number % 3 === 0 && number % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (number % 3 === 0) {
+    console.log("Fizz");
+  } else if (number % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log("Not divisible by 3 or 5");
+  }
+};
+
+fizzBuzz(0)
+
+const fizzBuzz2 = fizzBuzz
+fizzBuzz2(3)
+
+// Example Test Cases
+fizzBuzz(15); // "FizzBuzz"
+fizzBuzz(9); // "Fizz"
+fizzBuzz(10); // "Buzz"
+fizzBuzz(7); // "Not divisible by 3 or 5"
